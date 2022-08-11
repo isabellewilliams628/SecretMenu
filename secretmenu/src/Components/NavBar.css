@@ -1,0 +1,61 @@
+.NavBar{
+    display: flex;
+    width: 98vw;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LeftSide{
+    display: flex;
+}
+
+.RightSide{
+    display: flex;
+    align-items: center;
+}
+
+.AllRecipes{
+    display: flex;
+    background-color: #E9F9F2;
+    font-family: 'AmstelvarAlpha';
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    margin-left: 39px;
+    margin-top: 20px;
+}
+
+.AllRecipes:hover{
+    cursor:pointer;
+    background-color: #82BD86;
+}
+
+.Login{
+    display: flex;
+    background-color: #E9F9F2;
+    font-family: 'AmstelvarAlpha';
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    margin-left: 39px;
+    margin-top: 20px;
+
+}
+
+.Login:hover{
+    cursor:pointer;
+    background-color: #82BD86;
+}
+
+.Favorites{
+    display: flex;
+    width: 30px;
+    height: 30px;    
+    margin-right: 30px;
+    margin-top: 20px;
+}
