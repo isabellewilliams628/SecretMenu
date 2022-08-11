@@ -1,4 +1,5 @@
 import './Home.css';
+import React from 'react';
 import NavBar from '../Components/NavBar.js'
 import logo from '../Assets/starb.png'
 

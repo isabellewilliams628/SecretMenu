@@ -1,19 +1,21 @@
 .MiddleCard{
     background-color: #E9F9F2;
     width: 100vw;
-    height: 350px;
+    height: 50vh;
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .MiddleCardText{
-    font-family: 'AmstelvarAlpha';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    margin-bottom: 200px;
-   
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.Logo{
+    height: 25vh;
+    width: 12vw;
 }
