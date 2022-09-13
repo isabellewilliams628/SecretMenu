@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.Home{
+.Hom{
     display: flex;
     background-color: #E9F9F2;
     font-family: 'Playfair Display', serif;
@@ -28,7 +28,7 @@
     margin-top: 20px;
 }
 
-.Home:hover{
+.Hom:hover{
     cursor:pointer;
     background-color: #82BD86;
 }
