@@ -1,3 +1,7 @@
+.Home{
+    display: flex;
+    justify-content: center;
+}
 .MiddleCard{
     background-color: #E9F9F2;
     width: 100vw;

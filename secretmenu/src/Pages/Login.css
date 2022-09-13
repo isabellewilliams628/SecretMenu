@@ -1,0 +1,65 @@
+.Log{
+    font-family: 'Playfair Display', serif;
+}
+
+.logText{
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.boxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.loginBox{
+    width: 40vw;
+    height: 60vh;
+    background-color: #E9F9F2;
+
+   
+}
+
+.registerBox{
+    width: 40vw;
+    height: 60vh;
+    background-color: #E9F9F2;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 9px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+  }
+
+input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: white;
+    border: 1px solid white;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+    background: #82BD86;
+  }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}

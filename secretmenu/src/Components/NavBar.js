@@ -10,6 +10,9 @@ function NavBar() {
     <div className="NavBar">
       
       <div className="LeftSide">
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div className="Home" >Home</div>
+          </Link>
           <Link to="/allrecipes" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="AllRecipes" >All Recipes</div>
           </Link>
