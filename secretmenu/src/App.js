@@ -8,6 +8,8 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAHjP5d4x2gO5rvPcsDsYgU74r4tWOKge0",
@@ -21,8 +23,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
+const auth = getAuth(app);
 library.add(faHeart);
+const db = getFirestore(app);
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login auth={auth}/>} />
       </Routes>
       </BrowserRouter>
     </div>
