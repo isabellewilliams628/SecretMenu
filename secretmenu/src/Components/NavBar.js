@@ -14,7 +14,7 @@ function NavBar() {
             <div className="Hom" >Home</div>
           </Link>
           <Link to="/allrecipes" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <div className="AllRecipes" >All Recipes</div>
+            <div className="Recipes" >All Recipes</div>
           </Link>
           <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className ="Login">Register/Sign In</div>

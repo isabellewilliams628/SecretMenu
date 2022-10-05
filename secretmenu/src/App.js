@@ -10,6 +10,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import AllRecipes from './Pages/AllRecipes.js'
 
 const firebaseConfig = {
   apiKey: "AIzaSyAHjP5d4x2gO5rvPcsDsYgU74r4tWOKge0",
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login auth={auth}/>} />
+        <Route path="/allrecipes" element={<AllRecipes/>} />
       </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,46 @@
+.AllRecipes{
+
+}
+
+.titleText{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    display: flex;
+    justify-content:baseline;
+    margin-top: 30px;
+    margin-left: 37px;
+}
+
+.Matcha{
+    font-family: 'Playfair Display', serif;
+}
+
+.Matcha:hover{
+    cursor: pointer;
+}
+
+.VietnameseCoffee{
+    font-family: 'Playfair Display', serif;
+}
+
+.VietnameseCoffee:hover{
+    cursor: pointer;
+}
+
+.RecipeBox{
+    width: 20vw;
+    margin-left: 50px;
+    
+}
+
+.RecipeText{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.All{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
