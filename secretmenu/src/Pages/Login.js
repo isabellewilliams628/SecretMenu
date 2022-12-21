@@ -86,7 +86,7 @@ function Login({auth}) {
                 <div className="logText">Register Now!</div>
                 {isSubmitted ? <div>User is successfully logged in</div> : renderRegisterForm}
             </div>
-            <div onClick={() => {signOut(auth)}}>LOG OUT SWAG</div>
+            <div onClick={() => {signOut(auth)}}>Log out</div>
         </div>
     </div>
   );

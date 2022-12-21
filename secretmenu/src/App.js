@@ -11,6 +11,8 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import AllRecipes from './Pages/AllRecipes.js'
+import Matcha from './Pages/Matcha.js';
+import VIC from './Pages/VIC.js'
 
 const firebaseConfig = {
   apiKey: "AIzaSyAHjP5d4x2gO5rvPcsDsYgU74r4tWOKge0",
@@ -36,6 +38,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login auth={auth}/>} />
         <Route path="/allrecipes" element={<AllRecipes/>} />
+        <Route path="/specialmatcha" element={<Matcha/>}/>
+        <Route path="/vietnameseicedcoffee" element={<VIC/>}/>
       </Routes>
       </BrowserRouter>
     </div>
