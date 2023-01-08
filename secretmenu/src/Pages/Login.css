@@ -4,8 +4,60 @@
 
 .logText{
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 90px;
+    margin-bottom: 40px;
     font-weight: 500;
+}
+
+.buttonBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.swapButton{
+    height: 4vh;
+    width: 15vh;
+    background-color: #E9F9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.swapButton:hover{
+    cursor:pointer;
+    background-color: #82BD86;
+}
+
+.logoutButton{
+    height: 4vh;
+    width: 15vh;
+    background-color: #E9F9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.logoutButton:hover{
+    cursor:pointer;
+    background-color: #82BD86;
+}
+
+.typeDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
 }
 
 .boxContainer{
@@ -16,30 +68,36 @@
 }
 
 .loginBox{
+    display: flex;
     width: 40vw;
     height: 60vh;
     background-color: #E9F9F2;
-
+    margin-top: 2vh;
+    flex-direction: column;
    
 }
 
 .registerBox{
+    display: flex;
     width: 40vw;
     height: 60vh;
     background-color: #E9F9F2;
+    margin-top: 3vh;
+    flex-direction: column;
 
 }
 
 .input{
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    margin: 9px;
+    gap: 10px;
+    margin: 20px;
 }
 
 .button {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
 
 input[type="submit"] {

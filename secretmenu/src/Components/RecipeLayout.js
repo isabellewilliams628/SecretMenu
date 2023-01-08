@@ -10,11 +10,13 @@ function RecipeLayout() {
                 <div className="description"></div>
                 <div className="recipeBox">
                     <div className="TopCard">
-                        <h1>What To Order</h1>
+                        <div className="Title">What To Order</div>
                         <div className="sizeButton">Tall</div>
                         <div className="sizeButton">Grande</div>
                         <div className="sizeButton">Venti</div>
-                        <div className="recipeList"></div>
+                        <div className="recipeList">
+                            
+                        </div>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ function Login({auth}) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const [display, setDisplay] = useState(false);
 
   const renderErrorMessage = name =>
     name === errorMessages.name && (
@@ -77,17 +77,31 @@ function Login({auth}) {
   return (
     <div className="Log">
         <NavBar />
-        <div className="boxContainer">
-            <div className="loginBox">
-                <div className="logText">Login Now!</div>
-                {isSubmitted ? <div>User is successfully logged in</div> : renderLoginForm}
+            <div className='buttonBar'>
+              <div className="swapButton" onClick={() => setDisplay(false)}>Login</div>
+              <div className="swapButton" onClick={() => setDisplay(true)}>Register</div>
             </div>
-            <div className="registerBox">
-                <div className="logText">Register Now!</div>
-                {isSubmitted ? <div>User is successfully logged in</div> : renderRegisterForm}
+            <div className="typeDisplay">
+              {display === false ? 
+                <div>
+                   <div className="loginBox">
+                      <div className="logText">Login Now!</div>
+                      {isSubmitted ? <div>User is successfully logged in</div> : renderLoginForm}
+                    </div>
+                </div> 
+                :
+                <div> 
+                  <div className="registerBox">
+                      <div className="logText">Register Now!</div>
+                      {isSubmitted ? <div>User is successfully logged in</div> : renderRegisterForm}
+                  </div>
+                </div>
+              }
             </div>
-            <div onClick={() => {signOut(auth)}}>Log out</div>
-        </div>
+           
+          <div className='bottom'>
+            <div className="logoutButton" onClick={() => {signOut(auth)}}>Log out</div>
+          </div>
     </div>
   );
 }
