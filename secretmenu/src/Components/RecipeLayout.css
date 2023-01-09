@@ -7,7 +7,23 @@
     
 }
 
+.titleCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.heartIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.heartIcon:hover{
+    cursor: pointer;
+}
 .topHalf{
     margin-top: 10px;
     height: 43vh;

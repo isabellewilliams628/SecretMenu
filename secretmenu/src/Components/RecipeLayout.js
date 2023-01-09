@@ -2,7 +2,7 @@ import './RecipeLayout.css';
 import { doc, getDoc } from "firebase/firestore";
 import React, { useState, useEffect } from 'react';
 import { getStorage, ref } from "firebase/storage";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function RecipeLayout({db, recipeName}) {
     const [data, setData] = useState(null);
@@ -38,7 +38,12 @@ function RecipeLayout({db, recipeName}) {
             </div>
             <div className="bottomHalf">
                 <div className="left">
-                    <div className="recipeName">{data?.RecipeName}</div>
+                    <div className="titleCard">
+                        <div className="recipeName">{data?.RecipeName}</div>
+                        <div className="heartIcon">
+                            <FontAwesomeIcon icon="fa-regular fa-heart"/>
+                        </div>
+                    </div>
                     <div className="description">{data?.Description}</div>
                 </div>
                 <div className="recipeBox">
