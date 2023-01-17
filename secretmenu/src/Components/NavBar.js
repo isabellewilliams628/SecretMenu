@@ -20,11 +20,6 @@ function NavBar() {
             <div className ="Login">Register/Sign In</div>
           </Link>
         </div>
-      <div className="RightSide">
-        <Link to="/favorites" style={{ textDecoration: 'none', color: 'inherit',}}>
-          <FontAwesomeIcon icon="fa-regular fa-heart"/>
-        </Link>
-      </div>
     </div>
   );
 }

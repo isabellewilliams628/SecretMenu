@@ -1,0 +1,7 @@
+.VICheader{
+    margin-top: 10px;
+    height: 43vh;
+    width: 100vw;
+    background-image: url("../Assets/vicHeader.webp");
+    background-position: 50% 14%;
+}

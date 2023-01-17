@@ -33,16 +33,11 @@ function RecipeLayout({db, recipeName}) {
     return (
         
       <div className="RecipeLayout">
-            <div className="topHalf">
-                
-            </div>
+            
             <div className="bottomHalf">
                 <div className="left">
                     <div className="titleCard">
                         <div className="recipeName">{data?.RecipeName}</div>
-                        <div className="heartIcon">
-                            <FontAwesomeIcon icon="fa-regular fa-heart"/>
-                        </div>
                     </div>
                     <div className="description">{data?.Description}</div>
                 </div>
